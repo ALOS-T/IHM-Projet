@@ -1,19 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
+    background-color: #2c3e50; /* Un bleu plus sombre */
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Ajouter une ombre légère */
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
 nav {
-    background-color: #666;
+    background-color: #5D6D7E; /* Un bleu plus clair */
     padding: 10px;
     text-align: center;
 }
@@ -23,6 +29,12 @@ nav a {
     text-decoration: none;
     padding: 8px 16px;
     margin: 0 8px;
+    border-radius: 5px; /* Ajouter des coins arrondis */
+    transition: background-color 0.3s; /* Ajouter une transition de couleur de fond */
+}
+
+nav a:hover {
+    background-color: #283747; /* Un bleu plus vif au survol */
 }
 
 main {
@@ -30,6 +42,34 @@ main {
 }
 
 
+#accueil {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#accueil idee {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+#accueil idee img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+#accueil idee p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
 
 
 #interviews interview {
@@ -88,11 +128,24 @@ main {
     font-size: 1em;
 }
 
+
 #personas persona img {
     width: 100px; /* Largeur de l'image */
     height: 100px; /* Hauteur de l'image */
     border-radius: 50%; /* Pour rendre l'image circulaire */
     margin-bottom: 10px; /* Espacement en bas de l'image */
+}
+
+.info {
+    background-color: #f9f9f9;
+    border-left: 4px solid #ccc;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+.info p {
+    color: #555;
+    font-style: italic;
 }
 
 footer {
@@ -122,19 +175,7 @@ idee p {
     color: #555; /* Couleur du texte pour le paragraphe */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
 
 h1 {
     margin: 0;
@@ -234,13 +275,17 @@ footer {
 }
 
 
-#accueil idee img {
-    width: 300px; /* Largeur augmentée de l'image */
-    height: auto; /* Ajuste la hauteur automatiquement pour conserver les proportions */
-    object-fit: cover; /* Recadre l'image pour remplir la boîte sans déformer l'image */
-    object-position: center; /* Centre l'image dans la boîte */
-    border-radius: 8px; /* Coins arrondis */
-    display: block; /* Assure que l'image est traitée comme un élément de bloc */
-    margin: 0 auto; /* Centre l'image horizontalement */
+
+
+#videos {
+    
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    flex-direction: column; /* Aligner les éléments verticalement */
+    text-align: center; /* Centrer le texte */
 }
 
+#videos video {
+    width: 480px; /* Largeur de la vidéo */
+    height: 300px; /* Hauteur de la vidéo */
+}
