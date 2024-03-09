@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog IHM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ajoutez ces styles à votre fichier style.css */
+
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blog IHM</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="changeSection('accueil')">Accueil</a>
+        <a href="#" onclick="changeSection('interviews')">Interviews</a>
+        <a href="#" onclick="changeSection('personas')">Personas</a>
+        <a href="#" onclick="changeSection('videos')">Vidéos</a>
+    </nav>
+
+    <main>
+        <div id="accueil" class="visible">
+            <idee>
+                <h2>Objets perdus</h2>
+                <p>L'idée de notre projet se porte sur la thématique des objets perdus</p>
+            </idee>
+            
+            <!-- Ajoutez d'autres articles ici -->
+        </div>
+
+        <div id="interviews" class="hidden">
+            <!-- Contenu de la section Interviews -->
+            <interview>
+                <h2>Interview par Kim Saïdi</h2>
+                
+                <a href="page2.html">Interview 1</a>
+                <a href="page3.html">Interview 2</a>
+            </interview>
+            
+
+            <interview>
+                <h2>Interview par Malo ...</h2>
+                
+                <a href="page4.html">Interview 1</a>
+                <a href="page5.html">Interview 2</a>
+            </interview>
+
+            <interview>
+                <h2>Interview par Rayan ...</h2>
+                
+                <a href="page6.html">Interview 1</a>
+                <a href="page7.html">Interview 2</a>
+                
+            </interview>
+
+            <interview>
+                <h2>Interview par Saad ...</h2>
+
+                <a href="page8.html">Interview 1</a>
+                <a href="page9.html">Interview 2</a>
+                
+                
+            </interview>
+
+        </div>
+
+        <div id="personas" class="hidden">
+            <!-- Contenu de la section Personas -->
+            <persona>
+                <h2>Persona 1</h2>
+                <p>Présentation du persona 1.</p>
+            </persona>
+
+            <persona>
+                <h2>Persona 2</h2>
+                <p>Présentation du persona 2.</p>
+            </persona>
+        </div>
+
+        <div id="videos" class="hidden">
+            <!-- Contenu de la section Vidéos -->
+        </div>
+    </main>
+
+    
+
+    <script>
+        function changeSection(sectionId) {
+            // Masque toutes les sections
+            document.querySelectorAll('main > div').forEach(section => {
+                section.classList.remove('visible');
+                section.classList.add('hidden');
+            });
+
+            // Affiche la section spécifique
+            document.getElementById(sectionId).classList.remove('hidden');
+            document.getElementById(sectionId).classList.add('visible');
+        }
+    </script>
+
+</body>
+</html>
