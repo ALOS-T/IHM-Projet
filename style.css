@@ -313,6 +313,19 @@ footer {
 }
 
 
+#sketchs {
+    width: 700px; /* Largeur souhaitée de la div */
+    height: 700px; /* Hauteur souhaitée de la div */
+    
+}
+
+#sketchs img {
+    width: 80%; /* Utilise toute la largeur disponible */
+    height: auto; /* Ajuste la hauteur de manière proportionnelle */
+    display: block; /* Assurez-vous que l'image est traitée comme un élément de bloc */
+}
+
+
 
 
 #videos {
