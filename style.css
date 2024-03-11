@@ -41,6 +41,23 @@ main {
     padding: 20px;
 }
 
+.retour {
+    text-align: center;
+}
+
+.retour a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.retour a:hover {
+    background-color: #2980b9;
+}
 
 #accueil {
     justify-content: center;
